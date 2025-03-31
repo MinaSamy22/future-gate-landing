@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Gate</title>
+  <link rel="icon" type="image/png" href="app/images/favicon-icon.svg">
+  <link rel="stylesheet" href="app/css/style.css">
+</head>
+
+<body>
+  <div class="header-container-page">
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="app/images/logo.svg" alt="Future Gate Logo">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#Gifted-Wallet">Why Future Gate</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#Work">How It Works</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+        <a href="#"><button class="download-btn">Download Now</button></a>
+        <div class="menu-bar">
+          <img class="bar-icon" src="app/images/menu-bar-icon.svg" alt="menu bar">
+          <img class="close-bar-icon" src="app/images/icon-close-bar.svg" alt="menu bar">
+        </div>
+      </nav>
+      <aside class="sidebar">
+        <ul>
+          <a href="#">
+            <li>
+              <img src="app/images/icon-home.svg" alt="Home Icon">
+              Home
+            </li>
+          </a>
+          <a href="#Gifted-Wallet">
+            <li>
+              <img src="app/images/icon-gifted-wallet.svg" alt="Question Icon">
+              Why Gifted Wallet
+            </li>
+          </a>
+          <a href="#goals">
+            <li>
+              <img src="app/images/icon-goals.svg" alt="Target Icon">
+              Goals
+            </li>
+          </a>
+          <a href="#Work">
+            <li>
+              <img src="app/images/icon-Works.svg" alt="Map Icon">
+              How It Works
+            </li>
+          </a>
+          <a href="#Contact">
+            <li>
+              <img src="app/images/icon-contact.svg" alt="Mail Icon">
+              Contact Us
+            </li>
+          </a>
+        </ul>
+      </aside>
+    </header>
+    <section class="hero">
+      <div class="content">
+        <h1>A Parent-Child Wallet Built on Trust</h1>
+        <p>A Trusted Digital Wallet for Parents and Children:
+          Parents Reward, Children Grow and Earn!</p>
+        <a href="#"><button class="download-btn-home">Download Now</button></a>
+      </div>
+      <div class="image-home">
+        <img src="app/images/iphone-home.svg" alt="Phone">
+      </div>
+    </section>
+    <div class="home-svg-background">
+      <img src="app/images/svg-back-home.svg" alt="">
+    </div>
+    <div class="backg-bootom-home">
+      <img src="app/images/back-bootom-home.svg" alt="">
+    </div>
+  </div>
+  <div class="features" id="Gifted-Wallet">
+    <div class="features-wrapper">
+      <h2 class="features-heading">Why Gifted Wallet?</h2>
+      <div class="features-grid">
+        <div class="grid-container">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="app/images/icon-customized.svg" alt="Customized chores icon" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Customized Chores</h3>
+              <p class="feature-description">Parents assign chores tailored to each child's needs, promoting growth and
+                learning.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="app/images/icon-transfer.svg" alt="Points transfer icon"/>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Instant Points Transfer</h3>
+              <p class="feature-description">Once a chore is approved, points are transferred directly to the child.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="app/images/icon-notifications.svg" alt="Notifications icon"/>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Spend Notifications</h3>
+              <p class="feature-description">Parents are aware of their children's expenses</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="app/images/icon-secure.svg" alt="Security icon"/>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Secure Spending</h3>
+              <p class="feature-description">Children can safely spend earned points from trusted partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+  <section class="onboarding-container" id="Work">
+    <h2>How it work?</h2>
+    <div class="section-steps">
+      <div class="steps" id="parentSteps">
+        <h3>As Parent</h3>
+        <div class="step active" onclick="changeStep(0, 'parent')">
+          <div class="number">1</div>Download the app and sign up.
+        </div>
+        <div class="step" onclick="changeStep(1, 'parent')">
+          <div class="number">2</div>Add your children's details.
+        </div>
+        <div class="step" onclick="changeStep(2, 'parent')">
+          <div class="number">3</div>Set chores and rewards.
+        </div>
+        <div class="step" onclick="changeStep(3, 'parent')">
+          <div class="number">4</div>Evaluate and accept tasks upon completion.
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="app/images/Start page.svg" alt="" class="circle-svg">
+        <img id="parentImage" src="app/images/svg-circle-app-1.svg" alt="Step Image" class="app-img"> 
+      </div>
+    </div>
+
+    <div class="section-steps two">
+      <div class="image-container">
+        <img src="app/images/Start page.svg" alt="" class="circle-svg">
+        <img id="childImage" src="app/images/svg-circle-app-1.svg" alt="Step Image" class="app-img">
+      </div>
+      <div class="steps" id="childSteps">
+        <h3>As Child</h3>
+        <div class="step active" onclick="changeStep(0, 'child')">
+          <div class="number">1</div>Download the app and sign in.
+        </div>
+        <div class="step" onclick="changeStep(1, 'child')">
+          <div class="number">2</div>Complete the chores.
+        </div>
+        <div class="step" onclick="changeStep(2, 'child')">
+          <div class="number">3</div>Submit tasks for review.
+        </div>
+        <div class="step" onclick="changeStep(3, 'child')">
+          <div class="number">4</div>Earn and redeem points for digital gifts.
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contact-us" id="Contact">
+  </div>
+
+  <footer class="footer">
+    <div class="back-footer-left-top"></div>
+    <div class="back-footer-left-bootom"></div>
+    <div class="back-footer-right-top"></div>
+    <div class="container-footer">
+      <div class="left-footer">
+        <div class="logo-footer">
+          <img src="app/images/logo-footer.svg" alt="">
+        </div>
+        <a href="#">
+          <button class="btn-footer">Download Now</button>
+        </a>
+      </div>
+      <div class="center-footer">
+        <a href="#">Home</a>
+        <a href="#Gifted-Wallet">Why Gifted Wallet</a>
+        <a href="#goals">Goals</a>
+        <a href="#Work">How It Works</a>
+        <a href="#Contact">Contact Us</a>
+      </div>
+      <div class="right-footer"></div>
+      <div class="links-social">
+        <a href="https://www.tiktok.com/@giftedwallet?_t=ZS-8tdBiVOFZvG&_r=1" target="_blank"><img src="app/images/tiktok-1.svg" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=61563874814501" target="_blank"><img src="app/images/facebook-1.svg" alt=""></a>
+        <a href="https://www.instagram.com/giftedwallet" target="_blank"><img src="app/images/instagram-1.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+  <script src="app/JavaScript/main.js"></script>
+</body>
+</html>
